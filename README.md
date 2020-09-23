@@ -1,7 +1,7 @@
 
 # Pager service!
 
-## Runing tests
+## Running tests
 Requirements:
 - Golang version: >=1.14.4
 
@@ -26,7 +26,7 @@ If want more details, each entity has a json schema (links below).
 ```
 {
   "id": "UUID_V4",
-  "monitored_service_id": "UUID_V4_MSERV",
+  "monitored_service_id": "UUID_V4_M_SERVICE",
   "levels": [
     {
       "id": 0,
@@ -50,9 +50,9 @@ If want more details, each entity has a json schema (links below).
 ```
 {
     "id": "UUID_V4",
-    "monitored_service_id": "UUID_V4_MSERV",
+    "monitored_service_id": "UUID_V4_M_SERVICE",
     "message": "problem in production",
     "notified_level_id": 0,
-    "status": "open",
+    "status": "open"
 }
 ```
