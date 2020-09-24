@@ -7,3 +7,13 @@ type MonitoredService struct {
 	Name   string                  `json:"name"`
 	Status constants.ServiceStatus `json:"status"`
 }
+
+
+
+func (monitoredService *MonitoredService) SetUnhealthy() {
+	monitoredService.Status = constants.ServiceStatusUnhealthy
+}
+
+func (monitoredService *MonitoredService) SetHealthy() {
+	monitoredService.Status = constants.ServiceStatusHealthy
+}

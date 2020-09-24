@@ -1,5 +1,7 @@
 package constants
 
+import "errors"
+
 //ServiceStatus Service status types type
 type ServiceStatus string
 
@@ -31,3 +33,7 @@ const (
 	//AlertStatusClosed closed alert
 	AlertStatusClosed AlertStatus = "closed"
 )
+
+var ErrorAlertNotFound = errors.New("alert not found")
+var ErrorMonitoredServiceNotFound = errors.New("monitored service not found")
+var ErrorEscalationPolicyNotFound = errors.New("escalation policy service not found")
