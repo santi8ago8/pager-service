@@ -37,3 +37,4 @@ const (
 var ErrorAlertNotFound = errors.New("alert not found")
 var ErrorMonitoredServiceNotFound = errors.New("monitored service not found")
 var ErrorEscalationPolicyNotFound = errors.New("escalation policy service not found")
+var ErrorLockedResource = errors.New("locked resource")

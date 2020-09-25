@@ -39,3 +39,10 @@ type SmsService interface {
 type TimerService interface {
 	Schedule(resource string, resourceID string, time time.Time)
 }
+
+type LockService interface {
+	//Unlock best effort unlock
+	Unlock(resourceID string)
+	//Lock, returns true if the resource is locked correctly, and false if the resource was previously locked
+	Lock(resourceID string) bool
+}
