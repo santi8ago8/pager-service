@@ -56,14 +56,14 @@ func (service *AlertAcknowledgementTimeoutService) AcknowledgementTimeout(alertI
 	if err != nil {
 		return err
 	}
-	//the service is already unhealthy, finish the process.
+	//the service is already healthy, finish the process.
 	if monitoredService.Status != constants.ServiceStatusUnhealthy {
 		return nil
 	}
 
 	lockMonService := service.lockService.Lock(monitoredService.ID)
 	defer service.lockService.Unlock(monitoredService.ID)
-	
+
 	lockAlert := service.lockService.Lock(alert.ID)
 	defer service.lockService.Unlock(alert.ID)
 

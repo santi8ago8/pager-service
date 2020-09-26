@@ -8,8 +8,6 @@ type MonitoredService struct {
 	Status constants.ServiceStatus `json:"status"`
 }
 
-
-
 func (monitoredService *MonitoredService) SetUnhealthy() {
 	monitoredService.Status = constants.ServiceStatusUnhealthy
 }

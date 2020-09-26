@@ -8,9 +8,16 @@ Requirements:
 Run test (root project folder):  
 $ `go test ./... -cover`
 
-Note about tests:
-> The project has 100% code coverage.
 
+## Highlights: 
+Note about naming:
+> I try to be very descriptive with the names  
+
+Note about tests:
+> The project has 100% code coverage (excluding mocks folder).
+
+## Scaffolding 
+TODO:  
 
 ## Entities
 If want more details, each entity has a json schema (links below).
