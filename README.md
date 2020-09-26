@@ -22,7 +22,7 @@ If want more details, each entity has a json schema (links below).
 ### Monitored service [(schema)](https://www.jsonschemavalidator.net/s/XfVpdHvc):
 ```
 {
-    "id": "test",
+    "id": "UUID_V4",
     "name": "Monitored service test",
     "status": "healthy"
 }
