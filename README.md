@@ -133,3 +133,13 @@ According to the life cycle of the pager, I have created 4 services to satisfy t
 - Alert acknowledgement timeout
 - Alert acknowledgement
 - Monitored Service healthy
+
+## Observability and Monitoring
+To keep code simplicity, I didn't any of this subject, but I recommend: 
+
+Monitoring, add a APM such as Newrelic or Elastic APM.
+Metrics, add a metric service such as Datadog, Dynatrace or Prometheus.
+Add some logs in some places of the code.
+
+## Me
+More information about me: [http://santi.fun](http://santi.fun)
