@@ -90,7 +90,7 @@ If want more details, each entity has a json schema (links below).
 > files with logic has its own unit test file (*_test.go).
 
 ## Concurrency issues
-TODO: 
+To solve concurrency issues, I implement a lockService to lock entities when is necessary. Another option, if we use DynamoDB is activate the feature [Optimistic Locking](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBMapper.OptimisticLocking.html) with version number.
 
 
 ## Use Case Scenarios
